@@ -1,2 +1,172 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block content %}
+     <!--============================= FEATURED LISTING =============================-->
+    <section class="main-block featured-wrap">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="titile-block">
+                        <h2>Добро пожаловать в стюарды!</h2>
+                        <p>Мы обеспечиваем комфорт для зрителей и безопасность на мероприятиях.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 card-1">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static '/images/img_uefa.jpg' %}" alt="League of champions">
+                        <div class="card-body">
+                            <h5 class="card-title">Лига чемпионов</h5>
+                            <ul class="card-rating">
+{#                                <li>--</li>#}
+{#                                <li>--</li>#}
+{#                                <li><i class="fa fa-circle" aria-hidden="true"></i></li>#}
+{#                                <li>--</li>#}
+{#                                <li><i class="fa fa-circle" aria-hidden="true"></i></li>#}
+                                <li>Футбольные матчи<svg xmlns="http://www.w3.org/2000/svg" class="card-svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 390.762 390.762" style="enable-background:new 0 0 390.762 390.762;" xml:space="preserve"
+                                        width="512px" height="512px"><g><g>
+
+                                </g></g> </svg></li>
+                            </ul>
+                            <p class="card-text">Лучший футбольные команды мира принимают участие в данном турнире.</p>
+                        </div>
+                        <div class="card-bottom">
+                            <p><i class="ti-location-pin"></i>Локомотив</p>
+                            <span class="open-close_green">Идет сезон</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 card-2">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'images/img_rpl 2.jpg' %}" alt="Российская премьер лига">
+                        <div class="card-body">
+                            <h5 class="card-title">РПЛ</h5>
+                            <ul class="card-rating">
+{#                                <li>--</li>#}
+{#                                <li>--</li>#}
+{#                                <li><i class="fa fa-circle" aria-hidden="true"></i></li>#}
+{#                                <li>---</li>#}
+{#                                <li><i class="fa fa-circle" aria-hidden="true"></i></li>#}
+                                <li>Футбольные матчи<svg xmlns="http://www.w3.org/2000/svg" class="card-svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 470 470" enable-background="new 0 0 470 470" width="512px" height="512px"><g><g>
+
+                                </g></g> </svg> </li>
+                            </ul>
+                            <p class="card-text">Лучшие футбольные команды нашей страны в нашем топовом футбольном чемпионате.</p>
+                        </div>
+                        <div class="card-bottom">
+                            <p><i class="ti-location-pin"></i>Локомотив</p>
+                            <span class="open-close_green">Идет сезон</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 card-2">
+                    <div class="card card-last">
+                        <img class="card-img-top" src="{% static '/images/img_concert.jpg' %}" alt="Концерты">
+                        <div class="card-body">
+                            <h5 class="card-title">Концерты знаметых групп</h5>
+                            <ul class="card-rating">
+{#                                <li class="card-rating-yellow">--</li>#}
+{#                                <li>--</li>#}
+{#                                <li><i class="fa fa-circle" aria-hidden="true"></i></li>#}
+{#                                <li--li>#}
+{#                                <li><i class="fa fa-circle" aria-hidden="true"></i></li>#}
+                                <li>Концерты<svg xmlns="http://www.w3.org/2000/svg" class="card-svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" width="512px"
+                                        height="512px"><g><g>
+
+                                </g></g> </svg></li>
+                            </ul>
+                            <p class="card-text">Равлечения, фестивали и праздники.</p>
+                        </div>
+                        <div class="card-bottom">
+                            <p><i class="ti-location-pin"></i>Локомотив</p>
+                            <span>Планируется</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//END FEATURED LISTING -->
+    <!--============================= HOW IT WORKS  =============================-->
+    <section class="main-block howit-work-wrap">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="titile-block">
+                        <h2>Как мы работаем?</h2>
+                        <p>Всего несколько шагов и вы в нашей команде!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="howit-bg"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="howit-icon-wrap">
+                        <div class="howit-img-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="howit-svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 470 470" enable-background="new 0 0 470 470" width="512px" height="512px"><g><g>
+
+                          </g></g> </svg>
+                        </div>
+                        <h4>Присылаете резюме</h4>
+                        <p>Минимум ограничений и требований</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="howit-icon-wrap">
+                        <div class="howit-img-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="howit-svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve" width="512px" height="512px"><g><g>
+
+                              </g>
+                            </g></g> </svg>
+                        </div>
+                        <h4>Проходите собеседование и обучение</h4>
+                        <p>Приезжаете к нам в офис и получаете всю информацию</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="howit-icon-wrap">
+                        <div class="howit-img-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="howit-svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 416.768 416.768" style="enable-background:new 0 0 416.768 416.768;" xml:space="preserve" width="512px" height="512px"><g><g>
+                          <g>
+                           23,139.264,107.287,136.192,104.727,135.68z" data-original="#000000" class="active-path" data-old_color="#ff6b6b" fill="#ff6b6b"/>
+                          </g>
+                        </g></g> </svg>
+                        </div>
+                        <h4>Начинаете работу!</h4>
+                        <p>Приступаете к работе сразу после прохожения обучения полезных для всех навыкам</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//END HOW IT WORKS -->
+    <!--============================= ADD LISTING =============================-->
+    <section class="main-block">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="titile-block">
+                        <h2>Отправьте свою анкету уже сейчас!</h2>
+                        <p></p>
+                    </div>
+                    <div class="btn-wrap btn-wrap2">
+                        <a href="add-listing.html" class="btn btn-simple">Отправить анкету</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//END ADD LISTING -->
+
+     {% include 'mainapp/snippets/sponsors_snippet.html' %}
+
+
+{% endblock content %}

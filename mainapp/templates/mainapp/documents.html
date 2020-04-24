@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!--============================= SUBPAGE HEADER BG =============================-->
+    <section class="subpage-bg">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="titile-block title-block_subpage">
+                        <h2>Документы</h2>
+                        <p> <a href="../../../templates/base.html"> Home</a> / Docs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--// SUBPAGE HEADER BG -->
+    <!--============================= PRICING =============================-->
+    <section class="main-block">
+        <div class="container-fluid">
+            <div class="row">
+                {% for d in docs %}
+                <div class="col-md-3 article-first">
+                    <div class="pricing-wrap">
+                        <div class="pricing-head">
+                            <h2>{{ d.title|title }}</h2>
+                            <span>{{ d.description }}</span>
+                        </div>
+                        <div class="pricing-signup">
+                            <a href="{{ d.doc_file.url }}" class="btn btn-danger">Скачать</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endblock content %}

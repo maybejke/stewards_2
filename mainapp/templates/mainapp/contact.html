@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!--============================= SUBPAGE HEADER BG =============================-->
+    <section class="subpage-bg">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="titile-block title-block_subpage">
+                        <h2>Наши контакты</h2>
+                        <p>Стюарды.рф</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--// SUBPAGE HEADER BG -->
+    <!--============================= CONTACT =============================-->
+    <section class="main-block">
+            <div class="row no-gutters justify-content-center">
+                <div class="col-lg-7">
+                        <div class="">
+               <p>По вопросам трудоустройства можете связаться с нами по следующим телефонам с 10:00 до 21:00:<br>
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-md-4"><div style="font-weight: 500; font-size: larger">8 (925) 898-47-85 </div></div>
+                            <div class="col-md-4"><div style="font-weight: 500; font-size: larger">8 (967) 010-65-31</div></div>
+                            <div class="col-md-4"><div style="font-weight: 500; font-size: larger">8 (499) 343-68-53</div></div>
+                </div>
+                            <br>
+                Так же вы можете обраться к нам через электронную почту <strong>steward@стюарды.рф</strong>.
+                            <br>
+                            <br>
+                У нас есть аккаунты для связи в социальных сетях, подписывайся и присоединяйся к сообществу:
+                            <br>
+                            <br>
+                <div class="row justify-content-center">
+                    <div class="col-4"><a href="https://www.facebook.com/stewards.rus.73" target="_blank">
+                        <li class="fa fa-facebook-f fa-2x" style="font-weight: bold; color: #17a2b8; font-size: xx-large"></li>
+                        </a>
+                    </div>
+                    <div class="col-4"><a href="https://vk.com/stewards_rus" target="_blank">
+                        <li class="fa fa-vk fa-2x" style="font-weight: bold;color: #007aff; font-size: xx-large"></li>
+                        </a>
+                    </div>
+                    <div class="col-4"><a href="https://www.instagram.com/stewards_rus/?utm_source=ig_profile_share&igshid=1fq2d9rtvpolp" target="_blank">
+                        <li class="fa fa-instagram fa-2x" style="font-weight: bold;color: #bd4147; font-size: xx-large"></li>
+                        </a>
+                    </div>
+                </div>
+                    <br>
+                <p>
+                Либо придти к нам в гости, добравшись до станции метро Черкизовская (удобнее последний вагон из центра)
+                    и следовать маршруту на <a href="#come-with-map">карте</a>.
+                </p><br>
+            </div>
+
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="titile-block title-block_subpage">
+                        <h2>Присылайте нам сообщения</h2>
+                        <p style="text-transform: lowercase">и мы вам обязательно перезвоним!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters justify-content-center">
+                <div class="col-md-10 gray">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-form pl-4 py-4">
+
+                                <form action="#" method="post">
+                                    {% csrf_token %}
+                                    {% for field in form %}
+                                        {{ field.label }}
+                                        {{ field }}
+                                    {% endfor %}
+                                    <div class="form-group">
+                                        <button type="submit" class="btn-submit" id="js-contact-btn">Отправить</button>
+                                    </div>
+                                    <div id="js-contact-result" data-success-msg="Success, We will get back to you soon" data-error-msg="Oops! Something went wrong"></div>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="come-with-map" class="col-md-6">
+                            <!-- Google map will appear here! Edit the Latitude, Longitude and Zoom Level below using data-attr-*  -->
+                             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac4f51313a51da838a3c014c961bc22b6f885fca3eb99900a14c80846f0e1f319&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//END CONTACT -->
+{% endblock content %}

@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <section class="subpage-bg">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="titile-block title-block_subpage">
+                        <h2>Choose Payment Option</h2>
+                        <p> <a href="../../../templates/base.html"> Home</a> / Payment Method</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--// SUBPAGE HEADER BG -->
+    <!--============================= PAYMENT METHORD =============================-->
+    <section class="main-block">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+
+                <div class="col-md-10">
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <form method="post">
+                                <!-- General Information -->
+
+                                <div class="payment-wrap">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="payment-title">
+                                                <span class="ti-files"></span>
+                                                <h4>General Information</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Name</label>
+                                                <input type="text" class="form-control add-listing_form">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Email</label>
+                                                <input type="email" class="form-control add-listing_form">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Phone</label>
+                                                <input type="number" class="form-control add-listing_form">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Address</label>
+                                                <input type="text" class="form-control add-listing_form">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!--// General Information -->
+
+                                <!-- Payment method -->
+                                <div class="payment-wrap">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="payment-title">
+                                                <span class="ti-credit-card"></span>
+                                                <h4>Payment Method</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div id="accordion" class="payment-method-collapse">
+
+                                                <div class="card">
+                                                    <div class="card-header btn btn-link collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo">
+                                                        <h5 class="mb-0">PayPal</h5>
+                                                        <img src="../../../static/images/paypal.png" class="img-fluid" alt="#">
+                                                    </div>
+                                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                        <div class="card-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label>Full Name</label>
+                                                                        <input type="text" class="form-control add-listing_form">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label>PayPal Email</label>
+                                                                        <input type="email" class="form-control add-listing_form">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-header btn btn-link collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree">
+                                                        <h5 class="mb-0">Credit / Debit Card</h5>
+                                                        <img src="../../../static/images/credit.png" class="img-fluid" alt="#">
+                                                    </div>
+                                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                                        <div class="card-body">
+
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label>Card Holder Name</label>
+                                                                        <input type="text" class="form-control add-listing_form" placeholder="Michael">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="form-group">
+                                                                        <label>Card No.</label>
+                                                                        <input type="number" class="form-control add-listing_form" placeholder="1235 4785 4758 1458">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>Expire Month</label>
+                                                                        <input type="number" class="form-control add-listing_form" placeholder="05">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>Expire Year</label>
+                                                                        <input type="number" class="form-control add-listing_form" placeholder="2020">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                    <div class="form-group">
+                                                                        <label>CCV Code</label>
+                                                                        <input type="number" class="form-control add-listing_form" placeholder="533">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">CONFIRM NOW</button>
+                                </div>
+                            </form>
+                            <!--// Payment method -->
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="booking-summary_block">
+                                <img src="../../../static/images/featured-img1.jpg" class="img-fluid" alt="#">
+                                <div class="booking-summary-box">
+                                    <h6>Pizza Hutt</h6>
+                                    <span>Bishop Avenue, New York</span>
+
+                                    <div class="booking-summary_contact">
+                                        <p>807-502-5867</p>
+                                        <p>www.mysitelink.com</p>
+                                    </div>
+
+                                    <div class="booking-summary_deatail">
+                                        <h5>Booking Summary</h5>
+                                        <div class="booking-cost">
+                                            <span>Reservation Details</span>
+                                            <p>Date <span>12 Jan 2019</span></p>
+                                            <p>Time <span>7pm to 9pm</span></p>
+                                        </div>
+                                        <div class="booking-cost">
+                                            <span>Pricing Details</span>
+                                            <p>Dining <span>$200.00</span></p>
+                                            <p>Reservation <span>$30.00</span></p>
+                                            <p>Tax <span>$26.00</span></p>
+                                            <p>Total Cost <span class="total-red">$256.00</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//END PAYMENT METHORD -->
+{% endblock %}
